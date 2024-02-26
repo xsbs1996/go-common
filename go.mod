@@ -7,7 +7,7 @@ require (
 	github.com/golang-jwt/jwt/v4 v4.5.0
 	github.com/sirupsen/logrus v1.9.3
 	github.com/streadway/amqp v1.1.0
-	github.com/zeromicro/go-zero v1.6.2
+	github.com/zeromicro/go-zero v1.5.0
 	gorm.io/driver/mysql v1.5.4
 	gorm.io/gorm v1.25.7
 )
