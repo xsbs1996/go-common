@@ -2,8 +2,9 @@ package rabbitmq
 
 import (
 	"fmt"
-	"github.com/streadway/amqp"
 	"sync"
+
+	"github.com/streadway/amqp"
 )
 
 var consumerMap = new(sync.Map)

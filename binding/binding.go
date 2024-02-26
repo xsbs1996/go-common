@@ -1,10 +1,11 @@
 package binding
 
 import (
-	"git.ejxcgit.com/ejhycommon/go-common/rtjson"
-	"git.ejxcgit.com/ejhycommon/go-common/rtjson/msg"
-	"github.com/zeromicro/go-zero/rest/httpx"
 	"net/http"
+
+	"github.com/xsbs1996/go-common/rtjson"
+	"github.com/xsbs1996/go-common/rtjson/msg"
+	"github.com/zeromicro/go-zero/rest/httpx"
 )
 
 // BusinessValidator 复杂业务逻辑校验器

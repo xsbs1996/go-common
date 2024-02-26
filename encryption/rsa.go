@@ -9,7 +9,7 @@ import (
 	"encoding/asn1"
 	"encoding/pem"
 	"errors"
-	"git.ejxcgit.com/ejhycommon/go-common/encryption/gorsa"
+	"github.com/xsbs1996/go-common/encryption/gorsa"
 	"io"
 )
 

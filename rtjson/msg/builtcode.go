@@ -38,8 +38,7 @@ var BuiltMessage = map[int]string{
 	PhoneNumberErr:         "phone number error",
 	EmailErr:               "email error",
 	InsufficientBalanceErr: "insufficient balance",
-	//ForbiddenLogin:         "forbidden login",
-	ForbiddenLogin: "Account Disable",
-	ForbiddenGame:  "forbidden game",
-	ForbiddenTrade: "forbidden trade",
+	ForbiddenLogin:         "Account Disable",
+	ForbiddenGame:          "forbidden game",
+	ForbiddenTrade:         "forbidden trade",
 }

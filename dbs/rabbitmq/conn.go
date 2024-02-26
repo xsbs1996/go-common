@@ -3,9 +3,10 @@ package rabbitmq
 import (
 	"crypto/tls"
 	"fmt"
-	"github.com/streadway/amqp"
 	"sync"
 	"time"
+
+	"github.com/streadway/amqp"
 )
 
 var (
