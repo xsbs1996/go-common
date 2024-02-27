@@ -2,7 +2,7 @@ package msg
 
 import "sync"
 
-var msgList = make(map[string]map[int]string, 0) // 错误列表
+var msgList = make(map[string]map[int]string) // 错误列表
 var rLock sync.RWMutex
 
 // SetError 设置错误
@@ -11,20 +11,13 @@ func SetError(business string, lang string, info map[int]string) {
 	defer rLock.Unlock()
 
 	// 判断业务类型
-	businessList, ok := codeRange[business]
-	if !ok {
+	if business == Built {
 		panic(BuiltMessage[UnknownBusinessTypeErr])
 	}
 
 	// 与内置message合并并校验传递的错误码
-	codeList := make(map[int]string, 0)
+	codeList := make(map[int]string)
 	for k, v := range info {
-		if k < businessList[0] || k > businessList[1] {
-			panic(BuiltMessage[CodeRangeErr])
-		}
-		if _, ok := codeList[k]; ok {
-			panic(BuiltMessage[CodeDuplicationErr])
-		}
 		codeList[k] = v
 	}
 	for k, v := range BuiltMessage {
